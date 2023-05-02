@@ -16,8 +16,8 @@ let controller = {
     const id = req.params.id;
 
     try {
-      let city = await City.findById(id);
-      res.json(city);
+      let cityId = await cityService.getCityId(id);
+      res.json(cityId);
     } catch (error) {
       res.json({ error: error });
     }
