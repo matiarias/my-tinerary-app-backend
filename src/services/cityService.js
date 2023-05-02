@@ -13,6 +13,13 @@ let cityService = {
     return newCity;
   },
 
+  // -------- function para obtener todas las ciudades con el metodo get ------------
+
+  getAllCities: async function () {
+    let cities = await City.find();
+    return cities;
+  },
+
   // -------- function para obtener ciudad con id con el metodo get ------------
 
   getCityId: async function (id) {

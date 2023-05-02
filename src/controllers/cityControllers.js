@@ -5,8 +5,8 @@ const cityService = require("../services/cityService");
 let controller = {
   getCities: async function (req, res) {
     try {
-      let cities = await City.find();
-      res.json(cities);
+      let allCities = await cityService.getAllCities();
+      res.json(allCities);
     } catch (error) {
       res.json({ error: error });
     }
