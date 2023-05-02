@@ -12,6 +12,17 @@ let controller = {
     }
   },
 
+  getCityById: async function (req, res) {
+    const id = req.params.id;
+
+    try {
+      let city = await City.findById(id);
+      res.json(city);
+    } catch (error) {
+      res.json({ error: error });
+    }
+  },
+
   addCity: async function (req, res) {
     try {
       // let city = await new City({
