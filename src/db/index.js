@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-
 require("dotenv").config();
 
 const url = `mongodb+srv://matiasarias:${process.env.MONGO_DB_PASSWORD}@cluster0.mx1plao.mongodb.net/?retryWrites=true&w=majority`;
