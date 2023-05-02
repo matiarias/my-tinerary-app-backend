@@ -3,10 +3,10 @@ const City = require("../models/City");
 const cityService = require("../services/cityService");
 
 let controller = {
-  getCity: async function (req, res) {
+  getCities: async function (req, res) {
     try {
-      let city = await City.find();
-      res.json(city);
+      let cities = await City.find();
+      res.json(cities);
     } catch (error) {
       res.json({ error: error });
     }
