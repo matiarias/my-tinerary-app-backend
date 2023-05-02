@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const url =
-  "mongodb+srv://matiasarias:KnqXg0NKhnuBlpZD@cluster0.mx1plao.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://matiasarias:kzSiImRfGuyFjMCt@cluster0.mx1plao.mongodb.net/?retryWrites=true&w=majority";
 
 async function conectarDB() {
   mongoose
