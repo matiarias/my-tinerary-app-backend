@@ -1,4 +1,4 @@
-const City = require("../models/City");
+const { City } = require("../models/City");
 
 let cityService = {
   // ---- function para agregar con metodo post ----------
